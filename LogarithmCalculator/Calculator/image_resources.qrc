@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/button_images">
+        <file>images/degree.png</file>
+        <file>images/division.png</file>
+        <file>images/logarithm.png</file>
+        <file>images/root.png</file>
+        <file>images/transition.png</file>
+        <file>images/Log_cal.png</file>
+        <file>images/Icon.png</file>
+        <file>images/Icon.ico</file>
+    </qresource>
+</RCC>

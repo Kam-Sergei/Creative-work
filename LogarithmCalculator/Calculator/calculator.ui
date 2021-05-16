@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>calculator</class>
+ <widget class="QMainWindow" name="calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>590</width>
+    <height>619</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>590</width>
+    <height>619</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>calculator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image_resources.qrc">
+    <normaloff>:/button_images/images/Icon.png</normaloff>:/button_images/images/Icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+background:qlineargradient(spread:pad, x1:0.51, y1:0, x2:0.519, y2:1, stop:0 rgba(25, 217, 255, 255), stop:0.509615 rgba(123, 237, 255, 255), stop:1 rgba(35, 167, 255, 255));
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="b7">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>300</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bDegree">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>300</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(4, 0, 125);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.238806 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.492537 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.791045 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image_resources.qrc">
+      <normaloff>:/button_images/images/degree.png</normaloff>:/button_images/images/degree.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bl">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>300</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(230, 139, 48);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 169, 70, 255), stop:0.238806 rgba(255, 216, 152, 255), stop:1 rgba(255, 157, 59, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 167, 66, 255), stop:0.492537 rgba(255, 216, 152, 255), stop:1 rgba(255, 173, 90, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 162, 56, 255), stop:0.800995 rgba(255, 216, 152, 255), stop:1 rgba(255, 173, 90, 255));}</string>
+    </property>
+    <property name="text">
+     <string>(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b9">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>300</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bDot">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>510</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tablo_error">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>491</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>440</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bMultiply">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>370</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(4, 0, 125);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.238806 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.492537 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.791045 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}</string>
+    </property>
+    <property name="text">
+     <string>×</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tablo_3">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>170</y>
+      <width>411</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(234, 234, 234);
+border-radius:5px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(229, 229, 229, 255), stop:0.452736 rgba(252, 252, 252, 255), stop:1 rgba(212, 212, 212, 255));
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b4">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>370</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b0">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>510</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btransion">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>230</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(230, 139, 48);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 169, 70, 255), stop:0.238806 rgba(255, 216, 152, 255), stop:1 rgba(255, 157, 59, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 167, 66, 255), stop:0.492537 rgba(255, 216, 152, 255), stop:1 rgba(255, 173, 90, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 162, 56, 255), stop:0.800995 rgba(255, 216, 152, 255), stop:1 rgba(255, 173, 90, 255));}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image_resources.qrc">
+      <normaloff>:/button_images/images/transition.png</normaloff>:/button_images/images/transition.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bLog">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>230</y>
+      <width>201</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(230, 139, 48);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 169, 70, 255), stop:0.238806 rgba(255, 216, 152, 255), stop:1 rgba(255, 157, 59, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 167, 66, 255), stop:0.492537 rgba(255, 216, 152, 255), stop:1 rgba(255, 173, 90, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 162, 56, 255), stop:0.800995 rgba(255, 216, 152, 255), stop:1 rgba(255, 173, 90, 255));}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image_resources.qrc">
+      <normaloff>:/button_images/images/logarithm.png</normaloff>:/button_images/images/logarithm.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>250</width>
+      <height>70</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bRoot">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>300</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(4, 0, 125);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.238806 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.492537 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.791045 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image_resources.qrc">
+      <normaloff>:/button_images/images/root.png</normaloff>:/button_images/images/root.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bResult">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>439</y>
+      <width>61</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>78</horstretch>
+      <verstretch>80</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(199, 66, 0);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(255, 133, 46, 255), stop:0.25 rgba(255, 193, 152, 255), stop:1 rgba(244, 102, 32, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(255, 133, 46, 255), stop:0.509615 rgba(255, 193, 152, 255), stop:1 rgba(244, 102, 32, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(255, 133, 46, 255), stop:0.793269 rgba(255, 193, 152, 255), stop:1 rgba(244, 102, 32, 255));}</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bDivision">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>370</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(4, 0, 125);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.238806 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.492537 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.791045 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}</string>
+    </property>
+    <property name="text">
+     <string>÷</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b1">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>440</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tablo_1">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>70</y>
+      <width>411</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(234, 234, 234);
+border-radius:5px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(229, 229, 229, 255), stop:0.452736 rgba(252, 252, 252, 255), stop:1 rgba(212, 212, 212, 255));
+}
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="maxLength">
+     <number>32767</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bMinus">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>440</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>80</horstretch>
+      <verstretch>80</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(4, 0, 125);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.238806 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.492537 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.791045 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tablo_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>120</y>
+      <width>61</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bdivision">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>510</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(4, 0, 125);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.238806 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.492537 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.791045 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image_resources.qrc">
+      <normaloff>:/button_images/images/division.png</normaloff>:/button_images/images/division.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bSign">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>510</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(4, 0, 125);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.238806 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.492537 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.791045 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}</string>
+    </property>
+    <property name="text">
+     <string>±</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>440</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b8">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>300</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="br">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>370</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(230, 139, 48);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 169, 70, 255), stop:0.238806 rgba(255, 216, 152, 255), stop:1 rgba(255, 157, 59, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 167, 66, 255), stop:0.492537 rgba(255, 216, 152, 255), stop:1 rgba(255, 173, 90, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(255, 162, 56, 255), stop:0.800995 rgba(255, 216, 152, 255), stop:1 rgba(255, 173, 90, 255));}</string>
+    </property>
+    <property name="text">
+     <string>)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bDEL">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>230</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(199, 66, 0);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(255, 133, 46, 255), stop:0.25 rgba(255, 193, 152, 255), stop:1 rgba(244, 102, 32, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(255, 133, 46, 255), stop:0.509615 rgba(255, 193, 152, 255), stop:1 rgba(244, 102, 32, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(255, 133, 46, 255), stop:0.793269 rgba(255, 193, 152, 255), stop:1 rgba(244, 102, 32, 255));}</string>
+    </property>
+    <property name="text">
+     <string>DEL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b5">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>370</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bPlus">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>440</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(4, 0, 125);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.238806 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));
+}
+:hover{background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.492537 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(0, 13, 255, 255), stop:0.791045 rgba(125, 188, 255, 255), stop:1 rgba(0, 0, 145, 255));}</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b6">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>370</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bClear">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>230</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(199, 66, 0);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(255, 133, 46, 255), stop:0.25 rgba(255, 193, 152, 255), stop:1 rgba(244, 102, 32, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(255, 133, 46, 255), stop:0.509615 rgba(255, 193, 152, 255), stop:1 rgba(244, 102, 32, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(255, 133, 46, 255), stop:0.793269 rgba(255, 193, 152, 255), stop:1 rgba(244, 102, 32, 255));}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="blanguage">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 0, 127);
+border-radius:15px;
+background:qlineargradient(spread:pad, x1:0.50805, y1:0, x2:0.498, y2:1, stop:0 rgba(229, 229, 229, 255), stop:0.452736 rgba(252, 252, 252, 255), stop:1 rgba(212, 212, 212, 255));
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ENG</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b00">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>510</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+text-decoration: none;
+padding 0 0 0 0;
+ouline:none;
+border-width:2px;
+border-style:solid;
+border-color:rgb(0, 85, 0);
+border-radius:15px;
+background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.25 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));
+}
+:hover{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.504808 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}
+:pressed{background: qlineargradient(spread:pad, x1:0.504808, y1:0, x2:0.51, y2:0.988636, stop:0.00480769 rgba(62, 255, 62, 255), stop:0.783654 rgba(188, 255, 194, 255), stop:1 rgba(0, 156, 112, 255));}</string>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image_resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
