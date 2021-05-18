@@ -169,7 +169,7 @@ void cities::function(int e) // вычисление самого большог
         way[e][1] = minline;
         way[e][2] = mincolumn;
         e++;
-        matrix2[mincolumn][minline] = -1;
+        matrix2[mincolumn][minline] =matrix2[minline][mincolumn]= -1;
         for (int i = 1; i <= n2; i++)
         {
             matrix2[minline][i] = -1;
